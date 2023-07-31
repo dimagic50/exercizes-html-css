@@ -1,0 +1,45 @@
+<!--
+  Old Code: Aligning Images Vertically
+
+  As you saw on the last page, the align attribute is no longer used in HTML5, but it is covered here because you may see it used in older websites and it is still used in the code created by some visual editors.
+  You will see how to use CSS to achieve the same effects.
+
+  There are three values that the align attribute can take that control how the image should align vertically with the text that surrounds it:
+  
+  top:
+    This aligns the first line of the surrounding text with the top of the image. The value of top places the first line of text near the top of the
+    image and subsequent lines of text appear under the image.
+  middle:
+    This aligns the first line of the surrounding text with the middle of the image. The value of middle places the first line of text near the vertical middle of the image and subsequent lines of text appear under the image.
+  bottom:
+    This aligns the first line of the surrounding text with the bottom of the image. The value of bottom places the first line of text near the bottom
+    of the image and subsequent lines of text under the image.
+
+  When text flows right up to the edge of an image it can make it harder to read. You will learn how to add a gap between text and images using the CSS padding and margin properties. If you would like all of the text to wrap around the image (rather than just one line of text), you should use the CSS float property. In older code, you may see the align attribute used with the
+  values left or right to achieve the same effect (as described on the previous page), although its use is no longer recommended.
+-->
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aligning images vertically</title>
+  </head>
+  
+  <body>
+    <p>
+      <img src="./images/bird.gif" alt="Bird" width="100" height="100" align="top">There are around 10,000 living species of birds that inhabit
+      different ecosystems from the Arctic to the Antarctic. Many species undertake long distance annual migrations, and many more perform shorter
+      irregular journeys.
+    </p>
+    <hr>
+    <p>
+      <img src="./images/bird.gif" alt="Bird" width="100" height="100" align="middle">There are around 10,000 living species of birds that inhabit different ecosystems from the Arctic to the Antarctic. Many species undertake long distance annual migrations, and many more perform shorter irregular journeys.
+    </p>
+    <hr>
+    <p>
+      <img src="./images/bird.gif" alt="Bird" width="100" height="100" align="bottom">There are around 10,000 living species of birds that inhabit different ecosystems from the Arctic to the Antarctic. Many species undertake long distance annual migrations, and many more perform shorter irregular journeys.
+    </p>
+  </body>
+</html>
