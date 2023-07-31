@@ -1,3 +1,3 @@
 # exercizes-html-css
 
-# HTML & CSS - Design and build websites
+## HTML & CSS - Design and build websites: to practice, follow the numbering
