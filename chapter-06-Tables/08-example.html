@@ -1,0 +1,80 @@
+<!--
+  This example shows a table for customers to compare website hosting packages. There are table headings in the first row and first column of the table.
+  The empty cell in the top left still has a <th> element to represent it. Each cell of the table must be accounted for by a <th> or <td> element. The <th> elements use the scope attribute to indicate whether they are headings for a row or column. The final row uses the colspan attribute to spread across all three columns.
+
+  Summary TABLES:
+  1) The <table> element is used to add tables to a web page.
+  2) A table is drawn out row by row. Each row is created with the <tr> element.
+  3) Inside each row there are a number of cells represented by the <td> element (or <th> if it is a header).
+  4) You can make cells of a table span more than one row or column using the rowspan and colspan attributes.
+  5) For long tables you can split the table into a <thead>, <tbody>, and <tfoot>.
+-->
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tables</title>
+  </head>
+
+  <body>
+    <table>
+      <!-- testata tabella -->
+      <thead>
+        <tr>
+          <th></th>
+          <th scope="col">Home starter hosting</th>
+          <th scope="col">Premium business hosting</th>
+        </tr>
+      </thead>
+      
+      <!-- Corpo tabella -->
+      <tbody>
+        <tr>
+					<th scope="row">Disk space</th>
+					<td>250mb</td>
+					<td>1gb</td>
+				</tr>
+				<tr>
+					<th scope="row">Bandwidth</th>
+					<td>5gb per month</td>
+					<td>50gb per month</td>
+				</tr>
+				<tr>
+					<th scope="row">Email accounts</th>
+					<td>3</td>
+					<td>10</td>
+				</tr>
+				<tr>
+					<th scope="row">Server</th>
+					<td>Shared</td>
+					<td>VPS</td>
+				</tr>
+				<tr>
+					<th scope="row">Support</th>
+					<td>Email</td>
+					<td>Telephone and email</td>
+				</tr>
+				<tr>
+					<th scope="row">Setup</th>
+					<td>Free</td>
+					<td>Free</td>
+				</tr>
+				<tr>
+					<th scope="row">FTP accounts</th>
+					<td>1</td>
+					<td>5</td>
+				</tr>
+      </tbody>
+      
+      <!-- Piede tabella -->
+      <tfoot>
+        <tr>
+          <td></td>
+          <td colspan="2">Sign up now and save 10%!</td>
+        </tr>
+      </tfoot>
+    </table>
+  </body>
+</html>
