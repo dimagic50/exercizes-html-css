@@ -1,0 +1,227 @@
+<!--
+  Long tables:
+
+  There are three elements that help distinguish between the main content of the table and the first and last rows (which can contain different content).
+  These elements help people who use screen readers and also allow you to style these sections in a different manner than the rest of the table (as you will see when you learn about CSS).
+  
+  <thead>
+  The headings of the table should sit inside the <thead> element.
+  
+  <tbody>
+  The body should sit inside the <tbody> element.
+
+  <tfoot>
+  The footer belongs inside the <tfoot> element.
+  By default, browsers rarely treat the content of these elements any differently than other elements however designers often use CSS styles to change their appearance.
+
+  Some of the HTML editors that come in content management systems offer tools to help draw tables. If the first row of your table only contains <th> elements then you may find that the editor inserts a <thead> element automatically.
+
+  Part of the reason for having separate <thead> and <tfoot> elements is so that, if you have a table that is taller than the screen (or, if printed, longer than one page) then the browser can keep the header and footer visible whilst the contents of the table scroll. This is intended to make it easier for users to see which column the data is in (however this functionality is not implemented by default in any current browser).
+
+  I have added some CSS styles to this example so that you can see the contents of the <thead> and <tfoot> being treated differently than the rest of the rows. You will learn how to apply these CSS styles to tables.
+-->
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Long tables</title>
+  </head>
+
+  <body>
+    <p id="top">
+      <a href="#bottom">Bottom</a>
+    </p>
+    <table>
+      <!-- The headings:
+        The <thead> element represents the block of rows that consist of the column labels (headers) for the parent <table> element, if the <thead> element has a parent and it is a <table>. (MDN Reference)
+      -->
+      <thead>
+        <tr>
+          <th>Date</th>
+          <th>Income</th>
+          <th>Expenditure</th>
+        </tr>
+      </thead>
+
+      <!-- The body:
+        The <tbody> element represents a block of rows that consist of a body of data for the parent <table> element, if the <tbody> element has a parent and it is a <table>. (MDN Reference)
+      -->
+      <tbody>
+        <tr>
+					<th>1st January</th>
+					<td>250</td>
+					<td>36</td>
+				</tr>
+				<tr>
+					<th>2nd January</th>
+					<td>285</td>
+					<td>48</td>
+				</tr>
+				<tr>
+					<th>3rd January</th>
+					<td>260</td>
+					<td>42</td>
+				</tr>
+				<tr>
+					<th>4th January</th>
+					<td>290</td>
+					<td>38</td>
+				</tr>
+				<tr>
+					<th>5th January</th>
+					<td>310</td>
+					<td>115</td>
+				</tr>
+				<tr>
+					<th>6th January</th>
+					<td>168</td>
+					<td>14</td>
+				</tr>
+				<tr>
+					<th>7th January</th>
+					<td>226</td>
+					<td>20</td>
+				</tr>
+				<tr>
+					<th>8th January</th>
+					<td>253</td>
+					<td>37</td>
+				</tr>
+				<tr>
+					<th>9th January</th>
+					<td>294</td>
+					<td>33</td>
+				</tr>
+				<tr>
+					<th>10th January</th>
+					<td>216</td>
+					<td>46</td>
+				</tr>
+				<tr>
+					<th>11th January</th>
+					<td>244</td>
+					<td>29</td>
+				</tr>
+				<tr>
+					<th>12th January</th>
+					<td>297</td>
+					<td>32</td>
+				</tr>
+				<tr>
+					<th>13th January</th>
+					<td>328</td>
+					<td>86</td>
+				</tr>
+				<tr>
+					<th>14th January</th>
+					<td>215</td>
+					<td>38</td>
+				</tr>
+				<tr>
+					<th>15th January</th>
+					<td>254</td>
+					<td>30</td>
+				</tr>
+				<tr>
+					<th>16th January</th>
+					<td>256</td>
+					<td>27</td>
+				</tr>
+				<tr>
+					<th>17th January</th>
+					<td>311</td>
+					<td>68</td>
+				</tr>
+				<tr>
+					<th>18th January</th>
+					<td>212</td>
+					<td>39</td>
+				</tr>
+				<tr>
+					<th>19th January</th>
+					<td>234</td>
+					<td>36</td>
+				</tr>
+				<tr>
+					<th>20th January</th>
+					<td>221</td>
+					<td>43</td>
+				</tr>
+				<tr>
+					<th>21st January</th>
+					<td>259</td>
+					<td>38</td>
+				</tr>
+				<tr>
+					<th>22nd January</th>
+					<td>246</td>
+					<td>31</td>
+				</tr>
+				<tr>
+					<th>23rd January</th>
+					<td>248</td>
+					<td>17</td>
+				</tr>
+				<tr>
+					<th>24th January</th>
+					<td>229</td>
+					<td>45</td>
+				</tr>
+				<tr>
+					<th>25th January</th>
+					<td>263</td>
+					<td>34</td>
+				</tr>
+				<tr>
+					<th>26th January</th>
+					<td>258</td>
+					<td>41</td>
+				</tr>
+				<tr>
+					<th>27th January</th>
+					<td>283</td>
+					<td>22</td>
+				</tr>
+				<tr>
+					<th>28th January</th>
+					<td>256</td>
+					<td>30</td>
+				</tr>
+				<tr>
+					<th>29th January</th>
+					<td>278</td>
+					<td>47</td>
+				</tr>
+				<tr>
+					<th>30th January</th>
+					<td>251</td>
+					<td>15</td>
+				</tr>
+				<tr>
+					<th>31st January</th>
+					<td>129</td>
+					<td>64</td>
+				</tr>
+      </tbody>
+      
+      <!-- The footer 
+        The <tfoot> element represents the block of rows that consist of the column summaries (footers) for the parent <table> element, if the <tfoot> element has a parent and it is a <table>. (MDN Reference)
+      -->
+      <tfoot id="bottom">
+        <tr>
+          <th colspan="3"><hr></th>
+        </tr>
+        <tr>
+          <th>Total: </th>
+          <td>7824</td>
+          <td>1241</td>
+        </tr>
+      </tfoot>
+    </table>
+    <p>
+      <a href="#top">Top</a>
+    </p>
+  </body>
+</html>
