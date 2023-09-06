@@ -14,6 +14,7 @@ There must be nothing before it, not even a space.
 ## html5
 
 `<!DOCTYPE html>`
+
 ## html4
 
 `<!DOCTYPE html PUBLIC
